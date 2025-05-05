@@ -5,7 +5,7 @@ Digital fonts have completely changed since \LaTeX{} was created decades ago.
 \LaTeX{} originally used \MF,
 a format Donald Knuth designed specifically for \TeX{}.
 As time went on, support for PostScript\footnote{One of
-Adobe's original claims to fame,
+Adobe's original claim to fame,
 PostScript is a language for defining and drawing computer graphics,
 including type. It remains in widespread use today.} fonts was added.
 Today, \LuaLaTeX{} and \XeLaTeX{} support the modern font formats you will find
@@ -31,7 +31,7 @@ more common formats.}
 By default, \LuaLaTeX{} and \XeLaTeX{} use Latin Modern,
 an OpenType rendition of \LaTeX's original type family, Computer Modern.
 While these are high-quality fonts,
-they are not the only ones you ever want to use.
+they are not the only ones you will ever want to use.
 For other fonts, we turn to the \texttt{fontspec} package:
 
 \begin{leftfigure}
@@ -181,14 +181,14 @@ into a single glyph.\punckern\footnote{Ligatures fell out
 of style during the 20{\addfontfeature{VerticalPosition=Superior}th}
 century due to limitations of printing technology and the increased popularity
 of sans serif typefaces, which often lack them.
-Today they are making a comeback,
+Today, they are making a comeback,
 thanks in no small part to their support in OpenType.}
 OpenType groups them into three categories:
 \begin{description}
 \item[Standard] ligatures remedy spacing problems between certain characters.
     Consider lowercase f and i: in many typefaces,
     these combine to form the ligature fi---this avoids
-    awkward spacing between f's ascender and i's dot
+    awkward spacing between the f's ascender and the i's dot
     {\addfontfeature{Ligatures=CommonOff} (\,fi\,)}.
     Other common examples in English writing include ff,
     ffi, fl, and ffl.
@@ -208,7 +208,7 @@ Say you want discretionary ligatures.
 In the likely event that you also want \verb|Ligatures=TeX|,
 you would enable both with
 \verb|Ligatures={TeX,Discretionary}|.
-Ligatures can also be disabled with corresponding \verb|*Off|
+Ligatures can also be disabled with the corresponding \verb|*Off|
 options. If you want to stop using discretionary ligatures for some passage,
 \begin{leftfigure}
 \begin{lstlisting}
